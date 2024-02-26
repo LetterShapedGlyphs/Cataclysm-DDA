@@ -2812,8 +2812,8 @@ void monster::die( Creature *nkiller )
     }
     mission::on_creature_death( *this );
 
-    // Hallucinations always just disappear
-    if( is_hallucination() ) {
+    // Hallucinations and summoned creatures always just disappear
+    if( is_hallucination() || lifespan_end ) {
         mdeath::disappear( *this );
         return;
     }
