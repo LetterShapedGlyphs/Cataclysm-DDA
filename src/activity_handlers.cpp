@@ -106,64 +106,34 @@ enum class creature_size : int;
 static const activity_id ACT_ADV_INVENTORY( "ACT_ADV_INVENTORY" );
 static const activity_id ACT_ARMOR_LAYERS( "ACT_ARMOR_LAYERS" );
 static const activity_id ACT_ATM( "ACT_ATM" );
-static const activity_id ACT_BLEED( "ACT_BLEED" );
-static const activity_id ACT_BUILD( "ACT_BUILD" );
-static const activity_id ACT_BUTCHER( "ACT_BUTCHER" );
-static const activity_id ACT_BUTCHER_FULL( "ACT_BUTCHER_FULL" );
 static const activity_id ACT_CONSUME_DRINK_MENU( "ACT_CONSUME_DRINK_MENU" );
 static const activity_id ACT_CONSUME_FOOD_MENU( "ACT_CONSUME_FOOD_MENU" );
 static const activity_id ACT_CONSUME_MEDS_MENU( "ACT_CONSUME_MEDS_MENU" );
-static const activity_id ACT_DISMEMBER( "ACT_DISMEMBER" );
-static const activity_id ACT_DISSECT( "ACT_DISSECT" );
 static const activity_id ACT_EAT_MENU( "ACT_EAT_MENU" );
-static const activity_id ACT_FERTILIZE_PLOT( "ACT_FERTILIZE_PLOT" );
-static const activity_id ACT_FETCH_REQUIRED( "ACT_FETCH_REQUIRED" );
-static const activity_id ACT_FIELD_DRESS( "ACT_FIELD_DRESS" );
 static const activity_id ACT_FILL_LIQUID( "ACT_FILL_LIQUID" );
 static const activity_id ACT_FIND_MOUNT( "ACT_FIND_MOUNT" );
-static const activity_id ACT_FISH( "ACT_FISH" );
 static const activity_id ACT_GAME( "ACT_GAME" );
 static const activity_id ACT_GENERIC_GAME( "ACT_GENERIC_GAME" );
 static const activity_id ACT_HAND_CRANK( "ACT_HAND_CRANK" );
 static const activity_id ACT_HEATING( "ACT_HEATING" );
-static const activity_id ACT_JACKHAMMER( "ACT_JACKHAMMER" );
 static const activity_id ACT_MEND_ITEM( "ACT_MEND_ITEM" );
-static const activity_id ACT_MOVE_LOOT( "ACT_MOVE_LOOT" );
-static const activity_id ACT_MULTIPLE_BUTCHER( "ACT_MULTIPLE_BUTCHER" );
-static const activity_id ACT_MULTIPLE_CHOP_PLANKS( "ACT_MULTIPLE_CHOP_PLANKS" );
-static const activity_id ACT_MULTIPLE_CHOP_TREES( "ACT_MULTIPLE_CHOP_TREES" );
-static const activity_id ACT_MULTIPLE_CONSTRUCTION( "ACT_MULTIPLE_CONSTRUCTION" );
-static const activity_id ACT_MULTIPLE_CRAFT( "ACT_MULTIPLE_CRAFT" );
-static const activity_id ACT_MULTIPLE_DIS( "ACT_MULTIPLE_DIS" );
-static const activity_id ACT_MULTIPLE_FARM( "ACT_MULTIPLE_FARM" );
-static const activity_id ACT_MULTIPLE_FISH( "ACT_MULTIPLE_FISH" );
-static const activity_id ACT_MULTIPLE_MINE( "ACT_MULTIPLE_MINE" );
-static const activity_id ACT_MULTIPLE_MOP( "ACT_MULTIPLE_MOP" );
-static const activity_id ACT_MULTIPLE_READ( "ACT_MULTIPLE_READ" );
 static const activity_id ACT_MUTANT_TREE_COMMUNION( "ACT_MUTANT_TREE_COMMUNION" );
 static const activity_id ACT_OPERATION( "ACT_OPERATION" );
-static const activity_id ACT_PICKAXE( "ACT_PICKAXE" );
 static const activity_id ACT_PLANT_SEED( "ACT_PLANT_SEED" );
 static const activity_id ACT_PULL_CREATURE( "ACT_PULL_CREATURE" );
 static const activity_id ACT_PULP( "ACT_PULP" );
-static const activity_id ACT_QUARTER( "ACT_QUARTER" );
 static const activity_id ACT_REPAIR_ITEM( "ACT_REPAIR_ITEM" );
 static const activity_id ACT_ROBOT_CONTROL( "ACT_ROBOT_CONTROL" );
-static const activity_id ACT_SKIN( "ACT_SKIN" );
 static const activity_id ACT_SOCIALIZE( "ACT_SOCIALIZE" );
 static const activity_id ACT_SPELLCASTING( "ACT_SPELLCASTING" );
 static const activity_id ACT_START_ENGINES( "ACT_START_ENGINES" );
 static const activity_id ACT_START_FIRE( "ACT_START_FIRE" );
 static const activity_id ACT_STUDY_SPELL( "ACT_STUDY_SPELL" );
-static const activity_id ACT_TIDY_UP( "ACT_TIDY_UP" );
 static const activity_id ACT_TOOLMOD_ADD( "ACT_TOOLMOD_ADD" );
 static const activity_id ACT_TRAIN( "ACT_TRAIN" );
 static const activity_id ACT_TRAIN_TEACHER( "ACT_TRAIN_TEACHER" );
 static const activity_id ACT_TRAVELLING( "ACT_TRAVELLING" );
 static const activity_id ACT_TREE_COMMUNION( "ACT_TREE_COMMUNION" );
-static const activity_id ACT_VEHICLE( "ACT_VEHICLE" );
-static const activity_id ACT_VEHICLE_DECONSTRUCTION( "ACT_VEHICLE_DECONSTRUCTION" );
-static const activity_id ACT_VEHICLE_REPAIR( "ACT_VEHICLE_REPAIR" );
 static const activity_id ACT_VIBE( "ACT_VIBE" );
 static const activity_id ACT_VIEW_RECIPE( "ACT_VIEW_RECIPE" );
 static const activity_id ACT_WAIT( "ACT_WAIT" );
@@ -191,12 +161,6 @@ static const efftype_id effect_social_dissatisfied( "social_dissatisfied" );
 static const efftype_id effect_social_satisfied( "social_satisfied" );
 static const efftype_id effect_under_operation( "under_operation" );
 
-static const harvest_drop_type_id harvest_drop_blood( "blood" );
-static const harvest_drop_type_id harvest_drop_bone( "bone" );
-static const harvest_drop_type_id harvest_drop_flesh( "flesh" );
-static const harvest_drop_type_id harvest_drop_offal( "offal" );
-static const harvest_drop_type_id harvest_drop_skin( "skin" );
-
 static const itype_id itype_animal( "animal" );
 static const itype_id itype_battery( "battery" );
 static const itype_id itype_burnt_out_bionic( "burnt_out_bionic" );
@@ -213,14 +177,6 @@ static const json_character_flag json_flag_SILENT_SPELL( "SILENT_SPELL" );
 static const json_character_flag json_flag_SOCIAL1( "SOCIAL1" );
 static const json_character_flag json_flag_SOCIAL2( "SOCIAL2" );
 
-static const mongroup_id GROUP_FISH( "GROUP_FISH" );
-
-static const proficiency_id proficiency_prof_dissect_humans( "prof_dissect_humans" );
-
-static const quality_id qual_BUTCHER( "BUTCHER" );
-static const quality_id qual_CUT_FINE( "CUT_FINE" );
-static const quality_id qual_FISHING_ROD( "FISHING_ROD" );
-
 static const skill_id skill_computer( "computer" );
 static const skill_id skill_firstaid( "firstaid" );
 static const skill_id skill_survival( "survival" );
@@ -235,86 +191,44 @@ static const trait_id trait_SPIRITUAL( "SPIRITUAL" );
 static const trait_id trait_STOCKY_TROGLO( "STOCKY_TROGLO" );
 static const trait_id trait_THRESH_PLANT( "THRESH_PLANT" );
 
-static const zone_type_id zone_type_FARM_PLOT( "FARM_PLOT" );
 
 using namespace activity_handlers;
 
 const std::map< activity_id, std::function<void( player_activity *, Character * )> >
 activity_handlers::do_turn_functions = {
     { ACT_FILL_LIQUID, fill_liquid_do_turn },
-    { ACT_PICKAXE, pickaxe_do_turn },
     { ACT_PULP, pulp_do_turn },
     { ACT_GAME, game_do_turn },
     { ACT_GENERIC_GAME, generic_game_do_turn },
     { ACT_START_FIRE, start_fire_do_turn },
     { ACT_VIBE, vibe_do_turn },
     { ACT_HAND_CRANK, hand_crank_do_turn },
-    { ACT_MULTIPLE_FISH, multiple_fish_do_turn },
-    { ACT_MULTIPLE_CONSTRUCTION, multiple_construction_do_turn },
-    { ACT_MULTIPLE_MINE, multiple_mine_do_turn },
-    { ACT_MULTIPLE_MOP, multiple_mop_do_turn },
-    { ACT_MULTIPLE_BUTCHER, multiple_butcher_do_turn },
-    { ACT_MULTIPLE_FARM, multiple_farm_do_turn },
     { ACT_MUTANT_TREE_COMMUNION, mutant_tree_communion_do_turn },
-    { ACT_FETCH_REQUIRED, fetch_do_turn },
-    { ACT_BUILD, build_do_turn },
     { ACT_EAT_MENU, eat_menu_do_turn },
-    { ACT_VEHICLE_DECONSTRUCTION, vehicle_deconstruction_do_turn },
-    { ACT_VEHICLE_REPAIR, vehicle_repair_do_turn },
-    { ACT_MULTIPLE_CHOP_TREES, chop_trees_do_turn },
     { ACT_CONSUME_FOOD_MENU, consume_food_menu_do_turn },
     { ACT_CONSUME_DRINK_MENU, consume_drink_menu_do_turn },
     { ACT_CONSUME_MEDS_MENU, consume_meds_menu_do_turn },
     { ACT_VIEW_RECIPE, view_recipe_do_turn },
-    { ACT_MOVE_LOOT, move_loot_do_turn },
     { ACT_ADV_INVENTORY, adv_inventory_do_turn },
     { ACT_ARMOR_LAYERS, armor_layers_do_turn },
     { ACT_ATM, atm_do_turn },
-    { ACT_FISH, fish_do_turn },
     { ACT_REPAIR_ITEM, repair_item_do_turn },
-    { ACT_BLEED, butcher_do_turn },
-    { ACT_BUTCHER, butcher_do_turn },
-    { ACT_BUTCHER_FULL, butcher_do_turn },
     { ACT_TRAVELLING, travel_do_turn },
-    { ACT_FIELD_DRESS, butcher_do_turn },
-    { ACT_SKIN, butcher_do_turn },
-    { ACT_QUARTER, butcher_do_turn },
-    { ACT_DISMEMBER, butcher_do_turn },
-    { ACT_DISSECT, butcher_do_turn },
-    { ACT_TIDY_UP, tidy_up_do_turn },
-    { ACT_TIDY_UP, tidy_up_do_turn },
-    { ACT_JACKHAMMER, jackhammer_do_turn },
     { ACT_FIND_MOUNT, find_mount_do_turn },
-    { ACT_MULTIPLE_CHOP_PLANKS, multiple_chop_planks_do_turn },
-    { ACT_FERTILIZE_PLOT, fertilize_plot_do_turn },
     { ACT_OPERATION, operation_do_turn },
     { ACT_ROBOT_CONTROL, robot_control_do_turn },
     { ACT_TREE_COMMUNION, tree_communion_do_turn },
     { ACT_STUDY_SPELL, study_spell_do_turn },
-    { ACT_WAIT_STAMINA, wait_stamina_do_turn },
-    { ACT_MULTIPLE_CRAFT, multiple_craft_do_turn },
-    { ACT_MULTIPLE_DIS, multiple_dis_do_turn },
-    { ACT_MULTIPLE_READ, multiple_read_do_turn },
+    { ACT_WAIT_STAMINA, wait_stamina_do_turn }
 };
 
 const std::map< activity_id, std::function<void( player_activity *, Character * )> >
 activity_handlers::finish_functions = {
-    { ACT_BLEED, butcher_finish },
-    { ACT_BUTCHER, butcher_finish },
-    { ACT_BUTCHER_FULL, butcher_finish },
-    { ACT_FIELD_DRESS, butcher_finish },
-    { ACT_SKIN, butcher_finish },
-    { ACT_QUARTER, butcher_finish },
-    { ACT_DISMEMBER, butcher_finish },
-    { ACT_DISSECT, butcher_finish },
-    { ACT_FISH, fish_finish },
-    { ACT_PICKAXE, pickaxe_finish },
     { ACT_START_FIRE, start_fire_finish },
     { ACT_GENERIC_GAME, generic_game_finish },
     { ACT_TRAIN, train_finish },
     { ACT_TRAIN_TEACHER, teach_finish },
     { ACT_PLANT_SEED, plant_seed_finish },
-    { ACT_VEHICLE, vehicle_finish },
     { ACT_START_ENGINES, start_engines_finish },
     { ACT_PULP, pulp_finish },
     { ACT_REPAIR_ITEM, repair_item_finish },
@@ -334,7 +248,6 @@ activity_handlers::finish_functions = {
     { ACT_CONSUME_DRINK_MENU, eat_menu_finish },
     { ACT_CONSUME_MEDS_MENU, eat_menu_finish },
     { ACT_VIEW_RECIPE, view_recipe_finish },
-    { ACT_JACKHAMMER, jackhammer_finish },
     { ACT_ROBOT_CONTROL, robot_control_finish },
     { ACT_PULL_CREATURE, pull_creature_finish },
     { ACT_SPELLCASTING, spellcasting_finish },
@@ -2989,7 +2902,6 @@ void activity_handlers::fish_finish( player_activity *act, Character *you )
     you->add_msg_if_player( m_info, _( "You finish fishing" ) );
     if( !you->backlog.empty() && you->backlog.front().id() == ACT_MULTIPLE_FISH ) {
         you->backlog.clear();
-        you->assign_activity( ACT_TIDY_UP );
     }
 }
 
@@ -3400,11 +3312,6 @@ void activity_handlers::build_do_turn( player_activity *act, Character *you )
         // Activity is canceled in complete_construction()
         complete_construction( you->as_character() );
     }
-}
-
-void activity_handlers::tidy_up_do_turn( player_activity *act, Character *you )
-{
-    generic_multi_activity_handler( *act, *you );
 }
 
 void activity_handlers::multiple_fish_do_turn( player_activity *act, Character *you )
